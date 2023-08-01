@@ -13,7 +13,7 @@ is_promouter = user_nickname == promouter
 is_other_user = user_nickname != admin
 
 if is_admin:
-    put_success(f'Hello my {admin}')
+    put_success(f'Hello my master')
     put_success(f'I know, you are {user_age} years old xo-xo')
 
 elif is_promouter:
