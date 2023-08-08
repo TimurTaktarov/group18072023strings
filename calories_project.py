@@ -33,53 +33,53 @@ yummy_unicode = '\U0001F60B'
 
 total_calories = 0
 
-EGG_USER_DATA = pw_input("Enter how much grams ostrich egg you need", type=FLOAT, required=True)
-portion1 = EGG_USER_DATA * OSTRICH_EGG / 100
+egg_user_data = pw_input("Enter how much grams ostrich egg you need", type=FLOAT, required=True)
+portion1 = egg_user_data * OSTRICH_EGG / 100
 total_calories = portion1 + total_calories
 put_success(f'Full calorie content of order: {total_calories}, product calorie content: {portion1} {egg_unicode}')
 
-BUNNY_USER_DATA = pw_input("Enter how much grams rabbit you need", type=FLOAT, required=True)
-portion2 = BUNNY_USER_DATA * RABBIT / 100
+bunny_user_data = pw_input("Enter how much grams rabbit you need", type=FLOAT, required=True)
+portion2 = bunny_user_data * RABBIT / 100
 total_calories = portion2 + total_calories
 put_success(f'Full calorie content of order: {total_calories}, product calorie content: {portion2} {bunny_unicode}')
 
-PERCH_USER_DATA = pw_input("Enter how much grams sea perch you need", type=FLOAT, required=True)
-portion3 = PERCH_USER_DATA * SEA_PERCH / 100
+perch_user_data = pw_input("Enter how much grams sea perch you need", type=FLOAT, required=True)
+portion3 = perch_user_data * SEA_PERCH / 100
 total_calories = portion3 + total_calories
 put_success(f'Full calorie content of order: {total_calories}, product calorie content: {portion3} {perch_unicode}')
 
-PEPPER_USER_DATA = pw_input("Enter how much grams red sweet pepper you need", type=FLOAT, required=True)
-portion4 = PEPPER_USER_DATA * RED_SWEET_PEPPER / 100
+pepper_user_data = pw_input("Enter how much grams red sweet pepper you need", type=FLOAT, required=True)
+portion4 = pepper_user_data * RED_SWEET_PEPPER / 100
 total_calories = portion4 + total_calories
 put_success(f'Full calorie content of order: {total_calories}, product calorie content: {portion4} {pepper_unicode}')
 
-PARSLEY_USER_DATA = pw_input("Enter how much grams parsley you need", type=FLOAT, required=True)
-portion5 = PARSLEY_USER_DATA * PARSLEY / 100
+parsley_user_data = pw_input("Enter how much grams parsley you need", type=FLOAT, required=True)
+portion5 = parsley_user_data * PARSLEY / 100
 total_calories = portion5 + total_calories
 put_success(f'Full calorie content of order: {total_calories}, product calorie content: {portion5} {parsley_unicode}')
 
-BANANA_USER_DATA = pw_input("Enter how much grams bananas you need", type=FLOAT, required=True)
-portion6 = BANANA_USER_DATA * BANANAS / 100
+banana_user_data = pw_input("Enter how much grams bananas you need", type=FLOAT, required=True)
+portion6 = banana_user_data * BANANAS / 100
 total_calories = portion6 + total_calories
 put_success(f'Full calorie content of order: {total_calories}, product calorie content: {portion6} {banana_unicode}')
 
-WAFFLE_USER_DATA = pw_input("Enter how much grams waffles you need", type=FLOAT, required=True)
-portion7 = WAFFLE_USER_DATA * WAFFLES / 100
+waffle_user_data = pw_input("Enter how much grams waffles you need", type=FLOAT, required=True)
+portion7 = waffle_user_data * WAFFLES / 100
 total_calories = portion7 + total_calories
 put_success(f'Full calorie content of order: {total_calories}, product calorie content: {portion7} {waffle_unicode}')
 
-BREAD_USER_DATA = pw_input("Enter how much grams wheat bread you need", type=FLOAT, required=True)
-portion8 = BREAD_USER_DATA * WHEAT_BREAD / 100
+bread_user_data = pw_input("Enter how much grams wheat bread you need", type=FLOAT, required=True)
+portion8 = bread_user_data * WHEAT_BREAD / 100
 total_calories = portion8 + total_calories
 put_success(f'Full calorie content of order: {total_calories}, product calorie content: {portion8} {bread_unicode}')
 
-PISTACHOS_USER_DATA = pw_input("Enter how much grams pistachos you need", type=FLOAT, required=True)
-portion9 = PISTACHOS_USER_DATA * PISTACHOS / 100
+pistachos_user_data = pw_input("Enter how much grams pistachos you need", type=FLOAT, required=True)
+portion9 = pistachos_user_data * PISTACHOS / 100
 total_calories = portion9 + total_calories
 put_success(f'Full calorie content of order: {total_calories}, product calorie content: {portion9} {pistachos_unicode}')
 
-KEFIR_USER_DATA = pw_input("Enter how much grams kefir you need", type=FLOAT, required=True)
-portion10 = KEFIR_USER_DATA * KEFIR_TWO_AND_HALF_INTEREST / 100
+kefir_user_data = pw_input("Enter how much grams kefir you need", type=FLOAT, required=True)
+portion10 = kefir_user_data * KEFIR_TWO_AND_HALF_INTEREST / 100
 total_calories = portion10 + total_calories
 put_success(f'Full calorie content of order: {total_calories}, product calorie content: {portion10} {kefir_unicode}')
 
