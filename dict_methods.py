@@ -42,26 +42,26 @@ students['Мартін Рабов'] = {
     'Пошта': 'Martin@gmail.com',
     'Вік': 15,
     'Номер телефону': '+380970079188',
-    'Середній бал': 86.6
+    'Середній бал': 70.6
 }
 
+key, value, *other = students
 total_score = 0
+list_of_students = []
 
 for key, value in students.items():
-    if 18 <= students[key]['Вік'] <= 40:
-        print(key + ', найстарша людина групи', value)
-    elif students[key]['Середній бал'] >= 90:
-        print(key + ', в цієї людини найвищий бал у групі', value)
-    elif not students[key]['Номер телефону']:
-        students[key]['Номер телефону'] = '0991848808'
-        print(key, students[key]['Номер телефону'], '- це номер телефону батьків, так як учень не записав свій.')
+    if students[key]['Середній бал'] > 90:
+        list_of_students = key, students[key]['Середній бал']
+        print(list(list_of_students))
     total_score += students[key]['Середній бал']
 
-final_score = Decimal(total_score / len(students)).quantize(Decimal('0.01'))
+for key in students:
+    if not students[key]['Номер телефону']:
+        students[key]['Номер телефону'] = '+380991848808'
+        # print(key, students[key]['Номер телефону'], '- це номер телефону батьків, так як учень не записав свій.')
 
 if students:
+    final_score = Decimal(total_score / len(students)).quantize(Decimal('0.01'))
     print('Середній бал групи', final_score)
-
-'Список всієї групи, з данними студентів'
 
 pprint(students)
