@@ -42,7 +42,7 @@ students['Мартін Рабов'] = {
     'Пошта': 'Martin@gmail.com',
     'Вік': 15,
     'Номер телефону': '+380970079188',
-    'Середній бал': 70.6
+    'Середній бал': 90.6
 }
 
 key, value, *other = students
@@ -51,14 +51,11 @@ list_of_students = []
 
 for key, value in students.items():
     if students[key]['Середній бал'] > 90:
-        list_of_students = key, students[key]['Середній бал']
-        print(list(list_of_students))
+        list_of_students.append([key, students[key]['Середній бал']])
     total_score += students[key]['Середній бал']
-
-for key in students:
     if not students[key]['Номер телефону']:
         students[key]['Номер телефону'] = '+380991848808'
-        # print(key, students[key]['Номер телефону'], '- це номер телефону батьків, так як учень не записав свій.')
+print(list(list_of_students))
 
 if students:
     final_score = Decimal(total_score / len(students)).quantize(Decimal('0.01'))
