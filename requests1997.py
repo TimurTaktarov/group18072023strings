@@ -1,4 +1,5 @@
 import requests
+from pprint import pprint
 
 url = 'https://dummyjson.com/todos'
 
@@ -11,9 +12,11 @@ response = requests.get(url=url, params=params)
 
 result = response.json()
 
-tod = result['todos']
+todos = result['todos']
 
-for todo in tod:
+for todo in todos:
+    todo['smile'] = ':)'
     if todo['completed'] is False:
+        todo['smile'] = ':('
         print('*' * 10)
-        print(todo)
+        print(f' {todo["id"]} {todo["completed"]} {todo["smile"]}')
