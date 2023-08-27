@@ -1,5 +1,5 @@
 def car_description(*, time: int | float, speed: int | float, weight: int | float) -> str:
-    if time and speed and weight < 0:
+    if time < 0:
         raise ValueError('Values must be absolute')
     elif speed < 0:
         raise ValueError('Values must be absolute')
