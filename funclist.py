@@ -12,4 +12,3 @@ def list_of_letters(roster: str) -> list:
             return simple_list
         position += 1
     return simple_list
-
