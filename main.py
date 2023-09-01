@@ -2,9 +2,9 @@ import library
 
 
 def main():
-    recipients = ['test_hillel_api_mailing@ukr.net']
-    mail_body = 'Text from Kiev Lviv'
-    mail_subject = "Hello"
+    recipients = ['timurka.t.r@gmail.com']
+    mail_body = 'anonymous'
+    mail_subject = "Я люблю свою маму, ії звати Дана"
     # attachment
 
     library.send_email(
