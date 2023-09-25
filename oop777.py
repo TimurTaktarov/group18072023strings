@@ -7,7 +7,7 @@ class Car:
         self.fuel_consumption = fuel_consumption
 
     def __str__(self):
-        return f'Сharacteristic of the car: ↓' \
+        return f'Сharacteristic of the {self.__class__.__name__}: ↓' \
                f'\n graduation year: {self.graduation_year}' \
                f'\n producer: {self.producer}' \
                f'\n brand: {self.brand}' \
@@ -20,8 +20,8 @@ class Car:
 
 
 class Truck(Car):
-    def __init__(self, carrying_capacity: int):
-        super().__init__(producer='Lamborghini', brand='Lambo-Truck', fuel_consumption=18.8)
+    def __init__(self, carrying_capacity: int, producer: str, brand: str, fuel_consumption: float, graduation_year: int = 2020):
+        super().__init__(producer=producer, brand=brand, fuel_consumption=fuel_consumption, graduation_year=graduation_year)
         self.carrying_capacity = carrying_capacity
 
     def __str__(self):
@@ -35,8 +35,8 @@ class Truck(Car):
 
 
 class SportCar(Car):
-    def __init__(self, speed: int, price: int = 12900):
-        super().__init__(producer='Lanos', brand="Lada", fuel_consumption=16.8)
+    def __init__(self, producer: str, brand: str, fuel_consumption: float, speed: int, price: int = 12900, graduation_year: int = 2020):
+        super().__init__(producer=producer, brand=brand, fuel_consumption=fuel_consumption, graduation_year=graduation_year)
         self.speed = speed
         self.price = price
 
@@ -54,8 +54,8 @@ class SportCar(Car):
 auto = Car(producer='BMW', brand="Rolls-Royce", fuel_consumption=15.2)
 auto2 = Car(producer='Volkswagen', brand="Porsche", fuel_consumption=10.9, graduation_year=2077)
 auto3 = Car(producer='Toyota', brand="Lexus", fuel_consumption=16.8, graduation_year=2023)
-auto4 = Truck(carrying_capacity=200)
-auto5 = SportCar(speed=350, price=120000)
+auto4 = Truck(producer='Lamborghini', brand='Lambo-Truck', fuel_consumption=18.8, carrying_capacity=200)
+auto5 = SportCar(producer='Lanos', brand="Lada", fuel_consumption=16.8, speed=350, price=120000)
 
 del auto
 del auto2
