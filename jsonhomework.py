@@ -21,9 +21,8 @@ sort2 = [2.21, 1.1, 1.2, 1, 2, 3, 4, 5]
 
 
 def sort_int_numbers(value):
-    for element in value:
-        if type(element) == int:
-            return element
+    return type(value) == int
 
 
-result2 = filter(sort_int_numbers(sort2), sort2)
+result2 = filter(sort_int_numbers, sort2)
+print(list(result2))
