@@ -1,3 +1,4 @@
+# first typy of homework
 import requests
 import json
 
@@ -9,8 +10,20 @@ data_dict = data.json()
 
 with open('mygoogledata.json', mode='w', encoding='utf-8') as file:
     json.dump(data_dict, file)
-    map(lambda data1: str(data1), file)
 
-with open('mygoogledata.json', mode='r', encoding='utf-8') as file:
-    sort = json.load(file)
-    filter(lambda data2: int(data2), sort)
+# second typy of homework
+sort1 = [2, 3, 2, 3, 4, 2.2, 3.7]
+result1 = map(lambda data1: str(data1), sort1)
+print(list(result1))
+
+# third typy of homework
+sort2 = [2.21, 1.1, 1.2, 1, 2, 3, 4, 5]
+
+
+def sort_int_numbers(value):
+    for element in value:
+        if type(element) == int:
+            return element
+
+
+result2 = filter(sort_int_numbers(sort2), sort2)
